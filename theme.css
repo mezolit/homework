@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+    color: #767779;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.625;
+    text-rendering: optimizelegibility;
+}
+a {
+	text-decoration:none;
+	color:#22a0dd;
+}
+a:hover {
+	text-decoration: underline;
+	color:#066b9c;
+}
+header {
+	display:block;
+	background:#22a0dd;
+}
+.container {
+	width:1200px;
+	margin:0 auto;
+	overflow:hidden;
+	display:block;
+}
+.containerInner {
+	padding:0 25px;
+}
+.logoBlock {
+    float: left;
+	align-items: center;
+    display: flex;
+}
+.logoBlock a {
+	align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    padding: 0 25px;
+    text-decoration: none;
+}
+nav {
+    display: block;
+    float: right;
+}
+.navbar-nav > li {
+    list-style: outside none none;
+	padding: 0 25px;
+}
+.navbar-nav {
+    display: flex;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav li a {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+	position: relative;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+	font-weight:600;
+    height: 80px;
+    justify-content: center;
+    text-decoration: none;
+	color:rgba(255, 255, 255, 0.8);
+}
+.navbar-nav li.activeLink a,
+.navbar-nav li a:hover {
+	color:rgba(255, 255, 255, 1);
+}
+.navbar-nav li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 1px;
+	background: rgba(0, 0, 0, 0);
+	opacity: 0;
+	top: 50px;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+}
+.navbar-nav li.activeLink a::after,
+.navbar-nav li:hover a::after {
+	background: #fff;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.block-top-a {
+    background: #22a0dd url("images/home-header.jpg") no-repeat scroll 50% 50% / cover ;
+}
+.h1-class {
+    color: #fff;
+    font-family: "Roboto Condensed";
+    font-size: 46px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+.h3-class {
+    color: #5b5b5b;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.h5-class {
+    font-family: "Roboto Condensed";
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.mail {
+    color: #fff;
+    font-size: 18px;
+}
+.top-a-section {
+    padding: 210px 0;
+}
+.section-large {
+    padding: 140px 0;
+}
+.section-default {
+    padding: 70px 0;
+}
+.section-secondary {
+	background: #1b2831 none repeat scroll 0 0;
+	color:rgba(255, 255, 255, 0.85);
+}
+.section-blue {
+	background:#22a0dd;
+	color:#fff;
+}
+.w40 {
+    width: 40%;
+}
+.w60 {
+    width: 60%;
+}
+.w25 {
+    width: 25%;
+}
+.w33 {
+    width: 33.333%;
+}
+.w60, .w40, .w25, .w33 {
+    float: left;
+}
+.pad50 {
+    margin-left: 50px;
+}
+.containBlockInner {
+    margin-left: -50px;
+}
+.flex-middle {
+	align-items: center;
+}
+.textMiddle {
+	font-size:18px;
+}
+.grid {
+	display: flex;
+    flex-wrap: wrap;
+}
+.grid-small > * {
+	padding-left:15px;
+}
+.grid.grid-small {
+    margin-left: -15px;
+}
+.clientList > li {
+    list-style: outside none none;
+}
+.clientList {
+	margin-top:20px;
+}
+.clientList a {
+    color: #767779;
+    display: block;
+    margin-bottom: 10px;
+}
+.hr-line {
+    border-color: #e8e8e8;
+    border-style: solid none none;
+    margin-top: 20px;
+}
+.button-default {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+	margin:0 auto;
+    padding: 10px 0 8px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+}
+.button-default:hover {
+	color:#fff;
+	text-decoration:none;
+	background:none;
+	cursor:pointer;
+}
